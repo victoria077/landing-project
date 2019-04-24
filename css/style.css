@@ -151,6 +151,9 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 576px) {
+  .button {
+    font-size: 10px;
+  }
   .section {
     padding: 60px 0;
   }
@@ -301,8 +304,9 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero {
-  background: #f1f1f1 url(../img/hero/hero-bg.jpg) no-repeat center top;
+  background: #f1f1f1 url(https://storage.googleapis.com/idx-acnt-gs.ihouseprd.com/AR910845/site/banner_image_original_1512416324.jpg) no-repeat center top;
   background-size: contain;
+  background-blend-mode: red;
   padding-top: 120px;
   padding-bottom: 270px;
   margin-top: 80px;
@@ -311,6 +315,7 @@ input[type="checkbox"]:checked + label:before {
 .hero__title {
   font-size: 30px;
   margin-bottom: 40px;
+  opacity: -1;
 }
 
 .hero__subtitle {
@@ -318,6 +323,7 @@ input[type="checkbox"]:checked + label:before {
   font-size: 30px;
   margin-bottom: 67px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  opacity: -1;
 }
 
 @media (max-width: 991px) {
@@ -613,5 +619,208 @@ input[type="checkbox"]:checked + label:before {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.price {
+  background-color: #f1f1f1;
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-block__card {
+  margin-bottom: 10px;
+}
+
+.price-card {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__title {
+  margin: 0;
+}
+
+.price-card__cost {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.price-card__button {
+  text-align: center;
+  position: absolute;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 20px;
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+}
+
+@media (max-width: 991px) {
+  .price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
+  }
+}
+
+.step {
+  position: relative;
+  text-align: center;
+}
+
+.step__title {
+  font-size: 18px;
+}
+
+.step__text {
+  max-width: 160px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+i.step__image {
+  font-size: 45px;
+  color: #507fe1;
+}
+
+@media (max-width: 991px) {
+  .step {
+    width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    width: 100%;
+  }
+}
+
+.reviews {
+  background-color: #f5f6f8;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-slider__item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a99e9;
+  border-radius: 60%;
+  margin: 20px auto;
+}
+
+.reviews-slider__text {
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__mail {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

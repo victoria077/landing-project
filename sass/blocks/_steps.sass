@@ -1,0 +1,23 @@
+.step
+    position: relative 
+    text-align: center
+    &__title
+        font-size: 18px
+    &__text
+        max-width: 160px
+        margin: auto
+        margin-bottom: 30px
+    &s 
+        &-block 
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+i.step__image
+        font-size: 45px
+        color: $primary
+@media (max-width: 991px)
+    .step
+        width: 33%
+@media (max-width: 768px)
+    .step
+        width: 100%
